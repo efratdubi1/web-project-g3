@@ -1,0 +1,1088 @@
+
+/*------------------------------------------------Page 1- menu -------------------------------------*/
+
+
+/*----------------------The top menu-------------------*/
+
+.TopNavigationBar {
+    background-color: rgb(38, 70, 83);
+    display:flex;
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
+    text-align: center;
+    top: 0;
+    position: sticky;
+    justify-content:flex-start ;
+    height: 70px;
+    z-index: 2;
+}
+
+#emp_in_the_side{
+    margin-right: 60%;
+    margin-top: 1.5vh;
+}
+
+#text_in_the_side{
+    margin-right: -12%;
+    margin-top: 0.5vh;
+    color: white;
+    font-family: Trebuchet MS, sans-serif;
+    text-align:left;
+}
+
+
+/*---------------------buttons top bar-------------------*/
+
+/*---------open button---------*/
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(38, 70, 83);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: rgb(2, 48, 71);
+}
+
+#openbtn_img{
+    margin-top:-0.5vh;
+    height: 100%;
+
+}
+
+/*---------phone button---------*/
+.phonebtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(38, 70, 83);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top:0;
+}
+.phonebtn:hover {
+  background-color: rgb(2, 48, 71);
+}
+#phonebtn_img{
+    margin-top:-0.5vh;
+    height: 120%;
+}
+
+/*---------shopping cart button---------*/
+.shoppingCartbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(38, 70, 83);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.shoppingCartbtn:hover {
+  background-color: rgb(2, 48, 71);
+}
+
+#shoppingCartbtn_img{
+   height: 100%;
+}
+/*---------empanadas button---------*/
+.empanadasbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(38, 70, 83);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top:0;
+}
+.empanadasbtn:hover {
+  background-color: rgb(2, 48, 71);
+}
+
+#empanadasbtn_img{
+    margin-top:0;
+    height: 90%;
+}
+
+/*---------new member button---------*/
+.newMembertn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(38, 70, 83);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-top:0;
+}
+.newMembertn:hover {
+  background-color: rgb(2, 48, 71);
+}
+
+#newMembertn_img{
+    height: 100%;
+}
+
+/*----------------------The sidebar menu -------------------*/
+
+.sideNavigationBar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(244, 162, 97);
+  overflow-x: hidden;
+  padding-top: 100px;
+  box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
+  text-align: right;
+  transition: 0.5s;
+}
+
+
+.sideNavigationBar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(38, 70, 83);
+  display: block;
+  transition: 0.5s;
+  font-family: Calibri, serif;
+}
+
+
+.sideNavigationBar a:hover {
+  color: white;
+}
+
+
+.sideNavigationBar .closebtn {
+  position: absolute;
+  top: 80px;
+  left: 45px;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+
+#main {
+  transition: margin .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNavigationBar {padding-top: 15px;}
+  .sideNavigationBar a {font-size: 18px;}
+}
+
+/*-------------------------------------------------Page 1- main page -------------------------------------*/
+.body_main{
+    background-image: url(../images/background_main_page.png);
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.main {
+  padding: 0 10px;
+  font-family: Trebuchet MS, sans-serif;
+
+}
+#main_text{
+    text-align: center;
+    font-size: 100px;
+}
+#sec_text{
+    text-align: center;
+    font-size: 36px;
+}
+
+#order_now_btn {
+  cursor: pointer;
+  box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
+  background-color: rgb(233, 196, 106);
+  color: white;
+  text-align: right;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:Calibri, serif;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(38, 70, 83);
+  padding: 10px 24px;
+  position: center;
+  margin-left: 41%;
+  transition: margin 0.5s;
+}
+
+#order_now_btn:hover {
+  background-color: rgb(252, 191, 73);
+}
+
+/*----------------------*//* For Small Screens *//*-------------------*/
+
+@media screen and (max-height: 450px) {
+  .main {font-size:40px;}
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .sideNavigationBar {padding-top: 15px;}
+  .sideNavigationBar a {font-size: 18px;}
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    height: 70px ;
+    padding: 1vh 3vh 1vh 3vh;
+    font-family: Calibri, serif;
+    font-size: 20px;
+}
+
+
+/*-------------------------------------------------Page 2- Carlos Story -------------------------------------*/
+.body_carlos_story{
+    background-color: rgb(250, 237, 203);
+}
+
+.header {
+    background-color: rgba(233, 196, 106, 0.8);
+    color: white;
+    font-family: Calibri, serif;
+    width: 50%;
+    text-align: center;
+    margin-right: 28%;
+
+}
+
+.box_right{
+    width: 50%;
+    padding: 20px;
+    border-style: double;
+    margin-right: 5vh;
+    font-family: Calibri, serif;
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Typewriter{
+    font-size: 25px;
+}
+
+.box_left{
+    width: 50%;
+    float: left;
+    margin-left: -15vh;
+    margin-top: 2vh;
+}
+
+.aboutMe{ /* text- the story*/
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.Order_button_pages {
+  cursor: pointer;
+  box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.15);
+  background-color: rgb(233, 196, 106);
+  color: white;
+  padding: 14px 25px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Calibri, serif;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(38, 70, 83);
+  margin-right: 30vh;
+}
+.Order_button_pages:hover {
+  background-color: rgb(252, 191, 73);
+}
+
+/*-------------------------------------------------Page 3- What's the Question -------------------------------------*/
+.body_question_page{
+    background-image: url(../images/background_main_page.png) ;
+}
+#header_QA{
+    background-color: rgba(233, 196, 106, 0.6);
+    }
+
+.Question{
+    width: 80%;
+    background-color: rgba(250, 237, 203, 0.7);
+    border: 0.5px solid rgb(24, 37, 42);
+    border-radius: 14px;
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.15);
+}
+
+.collapsible {
+  margin-right: 10vh;
+  margin-left: 10vh;
+  width: 70%;
+  text-align:right;
+  background-color: rgba(233, 196, 106, 0.6);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-family: "Calibri Light", serif;
+}
+
+.active, .collapsible:hover {
+  background-color: rgb(238, 198, 165);
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.content {
+  margin-right: 10vh;
+  text-align:right;
+  padding: 15px;
+  display: none;
+  background-color: transparent;
+  font-family: "Calibri Light", serif;
+  height: 3vh;
+  font-size: 17px;
+}
+/*-------------------------------------------------Page 4- Contact page -------------------------------------*/
+.body_contact{
+    background-image: url(../images/background_main_page.png);
+}
+
+input[type=text], select, textarea {
+  width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  font-family: calibri, serif;
+}
+
+input[type=submit] {
+  background-color: rgb(244, 162, 97);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: calibri, serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(243, 131, 42);
+  font-family: calibri, serif;
+}
+
+.ways{
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.15);
+    font-family: calibri, serif;
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgba(233, 196, 106,0.8);
+    width: 500px;
+    float: right;
+    margin-right: 100px;
+}
+
+.text_ways{
+    font-size: 1.5vh;
+    text-align: right;
+
+}
+.small_text_ways{
+font-size: 4vh;
+
+}
+
+.list_ways{
+    float:right;
+    direction:rtl;
+    padding-right:10vh;
+    text-align:right;
+}
+
+#textarea_contact{
+    box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.15);
+    height:100px;
+    width: 400px;
+    resize: none;
+}
+
+.map_contact{
+    margin-right:125vh;
+    margin-top: 60px;
+}
+
+#map_box{
+    border-color: rgb(252,203,61);
+    border-width: 1vh;
+    border-radius: 5%;
+    width: 60vh;
+    height:55vh;
+}
+.waysNavigation{
+    margin-left:150px;
+}
+
+/*-------------------------------------------------Page 5- Cooking with Carlos -------------------------------------*/
+.body_cooking_class{
+    background-image: url(../images/cooking_class_background.png) ;
+    background-size: 100%;
+}
+
+.box_cooking{
+    width: 40%;
+    padding: 30px;
+    border-style: double;
+    font-family: calibri, serif;
+    font-size: 20px;
+    margin-right: 60vh;
+    text-align:center;
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cooking_with_carlos_btn {
+  cursor: pointer;
+  box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.15);
+  background-color: rgb(152, 193, 217);
+  color: white;
+  padding: 12px 16px;
+  display: inline-block;
+  font-weight: bold;
+  font-family:  Calibri , serif;
+  font-size: 20px;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(38, 70, 83);
+  margin-top: 0;
+}
+.cooking_with_carlos_btn:hover {
+  background-color: rgb(130, 184, 219);
+}
+#cooking_header{
+     background-color: rgba(152, 193, 217, 0.8);
+}
+#cooking_with_carlos_btn_image{
+    height: 5vh;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+#video_cooking{
+    border-style: double;
+}
+/*-------------------------------------------------Page 5.1- Registration cooking class -------------------------------------*/
+
+
+input[type=text], select, textarea {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: calibri, serif;
+}
+input[type=email], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: calibri, serif;
+}
+
+input[type=phone], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: calibri, serif;
+}
+
+input[type=number] {
+  width: 30%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: calibri, serif;
+ }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=submit] {
+  background-color: rgb(244, 162, 97);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: calibri, serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.body_cooking_class_regisration{
+    background-color: rgb(254, 200, 154)
+}
+
+input[type=submit]:hover {
+  background-color: rgb(241, 143, 74);
+  font-family: calibri, serif;
+}
+
+option {
+  font-family: calibri, serif;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: rgb(254, 200, 154);
+  padding: 20px;
+  font-family: calibri, serif;
+}
+
+/*-------------------------------------------------Page 6- Policy page -------------------------------------*/
+.box_policy{
+     width: 80%;
+     font-family: calibri, serif;
+     margin-right: 20vh;
+     font-size: 17px;
+     border-style: double;
+     border-width: 0.5px;
+     border-color: rgb(38, 70, 83);
+     background-color: rgb(250, 237, 203) ;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 10px;
+}
+
+.body_policy{
+    background-image: url(../images/background_main_page.png)
+}
+#policy{
+    font-size: 20px;
+    padding: 10vh;
+}
+
+
+/*-------------------------------------------------Page 7- Order page -------------------------------------*/
+
+.body_order{
+     background-image: url(../images/background_main_page.png) ;
+}
+.detail{
+    text-align: center;
+    font-family: calibri, serif;
+    color: black;
+    font-size: 3.5vh;
+}
+
+.payInput{
+  font-size: 15px;
+  color: rgba(77, 81, 87, 1);
+  width: 60vh;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 0.5vh;
+  resize: vertical;
+  margin-bottom: 0.5vh;
+  text-align: right;
+  font-family: Calibri, serif;
+  margin-left: 2vh;
+
+}
+
+.order_now_bp {
+  box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
+  background-color: rgb(233, 196, 106);
+  color: white;
+  padding: 10px 16px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:  Calibri , serif ;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: rgb(38, 70, 83);
+  margin-right: 15vh;
+    margin-left: 15vh;
+  margin-bottom: 6vh;
+}
+.order_now_bp:hover {
+  background-color: rgb(252, 191, 73);
+}
+
+.order_page {
+
+  padding: 0 10px;
+  font-family: Calibri, serif;
+    font-weight: bold;
+
+}
+.order_text{
+  margin-left: 5vh;
+  text-align: right;
+  font-size: 20px;
+  font-family:  Calibri, serif ;
+  margin-right: 22vh;
+}
+.order_text2{
+  margin-left: 3vh;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Calibri, serif ;
+  margin-right: 19vh;
+  color: green;
+
+}
+.radio{
+    margin-right: 30vh;
+}
+
+.order_text3{
+  color: black;
+  font-size: 18px;
+  font-family:  Calibri, serif ;
+  margin-left: 3vh;
+  margin-bottom: 1vh;
+}
+
+.box_order{
+    padding: 20px;
+     width: 40%;
+     font-family: calibri, serif;
+     margin-right: 65vh;
+     font-size: 17px;
+     border-style: double;
+     border-width: 0.5px;
+     border-color: rgb(38, 70, 83);
+     background-color: rgb(250, 237, 203) ;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 10px;
+}
+
+.OrderForm{
+    margin-right: 2vh;
+}
+
+/*-------------------------------------------------Page 8- Paying page -------------------------------------*/
+
+.body_paying{
+    background-color: rgb(250, 237, 203);
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+    grid-gap: 0;
+    margin: 0;
+}
+.header1 {
+    grid-area: header;
+    color: black;
+    text-align: center;
+    padding: 1vh 0 1vh 0;
+    font-family: Calibri;
+    font-size: 32px;
+}
+
+.textHeader1{
+    font-size: 80px;
+    -webkit-text-stroke: 0.2vh black;
+    line-height: 0;
+    padding: 1vh 0 1vh 0;
+}
+
+.FormDetails {
+  font-size: 3vh;
+  color: black;
+    font-family: Calibri;
+}
+
+.textPaying{
+    color: black;
+    font-size: 3vh;
+    margin: 1vh;
+}
+
+.payingInput{
+  font-size: 15px;
+  color: rgba(77, 81, 87, 1);
+  width: 25%;
+  padding: 3px 3px 3px 3px;
+  border: 1px solid #ccc;
+  border-radius: 0.5vh;
+  box-sizing: border-box;
+  resize: vertical;
+  margin-bottom: 0.5vh;
+  text-align: right;
+  font-family: MPLUSRounded, serif;
+}
+
+
+.buttonPay{
+  background-color: rgb(233, 196, 106);
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  font-family: Calibri, serif;
+  width: 20vh;
+  top: 2vh;
+  left: 2vh;
+  border-radius: 1vh;
+  position: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttonPay:hover{
+      background-color: rgb(252, 191, 73);
+}
+
+.BackCart{
+    position: center;
+    text-decoration: none;
+    color: black;
+    font-family: Calibri;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+ /*-------------------------------------------------Page 9- Shop page -------------------------------------*/
+
+
+.body_shop_page{
+    background-color: rgb(250, 237, 203);
+
+}
+
+.column {
+  float: left;
+  margin: 1.1vh;
+  margin-top: 1vh;
+  width: 18%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group {
+  cursor: pointer;
+  float: inside;
+  margin-top: 1vh;
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
+  padding: 2vh;
+  font-family: calibri, serif;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+    font-family: calibri, serif;
+}
+
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.btn-group .button-minus,
+.btn-group .button-plus {
+  font-weight: bold;
+  background-color: rgb(250, 237, 203);
+  height: 3vh;
+  padding: 0;
+  width: 3vh;
+  right: -14vh;
+  position: relative;
+  outline: none;
+}
+
+input[type="button"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  font-family: calibri, serif;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
+
+input[type="price"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  content: "₪";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.btn-group .quantity-field {
+  position: relative;
+  background-color: rgb(250, 237, 203);
+  height: 3vh;
+  right: -13vh;
+  text-align: center;
+  width: 13%;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  padding: 2.5px;
+
+}
+
+
+input,
+textarea {
+  border: rgb(255, 249, 179);
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+
+
+.ShopPic {
+  width: 100%;
+}
+
+/----------------------/
+/* For Small Screens */
+/-------------------/
+
+@media screen and (max-height: 450px) {
+  .main {
+    font-size: 40px;
+  }
+
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+
+  .sideNavigationBar {
+    padding-top: 15px;
+  }
+
+  .sideNavigationBar a {
+    font-size: 18px;
+  }
+}
+
+/*-----------------------------------Page 10 Cart Page ------------------------------*/
+.body_shoppingCart{
+    background-color: rgb(250, 237, 203);
+}
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  font-size: 24px;
+  margin-top: -4vh;
+  text-shadow: -1px -1px 0;
+  font-family: Calibri , serif;
+}
+
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  top: 0;
+  width: 250px;
+}
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
+.ShopPicCart {
+  width: 8vh;
+  height: 8vh;
+  position: center;
+  padding-right: 1vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+.shop_pic_items{
+   width: 16vh;
+  height: 16vh;
+    border-radius: 50%;
+}
+
+.empanadas-price {
+  position: relative;
+  background-color: rgb(250, 237, 203);
+  height: 3vh;
+  left: 3vh;
+  text-align: center;
+  width: 4vh;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 0 5px;
+  resize: vertical;
+  top: 0.1vh;
+  padding: 1px;
+}
+
+.button-payment {
+  background-color: rgb(233, 196, 106);
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  font-family: Calibri, serif;
+  width: 13vh;
+  top: 2vh;
+  left: 2vh;
+  border-radius: 1vh;
+  position: relative;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.total-price-text {
+  position: relative;
+  content: " סך הכל ";
+  width: 50vh;
+  height: 5vh;
+  left: 37%;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  text-align: center;
+  font-family: Calibri, serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.payment {
+  cursor: pointer;
+  margin-left:42.5%;
+  box-shadow: 0 1vh 2vh 0 rgba(0,0,0,0.5);
+  background-color: rgb(233, 196, 106);
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:Calibri, serif;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(38, 70, 83);
+  padding: 10px 24px;
+  transition: margin 0.5s;
+  width: 30vh
+
+}
+
+.payment:hover{
+  background-color: rgb(252, 191, 73);
+}
+
+/*Button payment cart style */
+.price:before {
+  content: '₪';
+}
+
+/*Table cart style*/
+.table, th, tr{
+  width: 100%;
+  background: rgb(250, 237, 203);
+  font-size: 22px;
+  text-align: center;
+  font-family: Calibri, serif;
+  border:1px solid black;
+  table-layout: fixed;
+  margin-top: 7vh;
+  border-collapse: collapse;
+  }
+
+
+/*Cart header style*/
+.headerCart{
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: center;
+    font-family: Calibri, serif;
+}
+
+
+
+
+
+
+

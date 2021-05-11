@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/registration.css" />
+    <title>Sign in & Sign up Form</title>
+  </head>
+  <body class="body_registration">
+
+     <div class="TopNavigationBar" id="TopNav" dir="rtl">
+               <button id="openbtn" class="openbtn" onclick="openNav()"> <img class="top_nav_btn" id="openbtn_img" src="../images/menu.png"  ></button>
+               <button class="empanadasbtn" onclick="window.location.href='Shop_Page.html'"> <img class="top_nav_btn" id="empanadasbtn_img" src="../images/dark_blue_emp.png"  ></button>
+               <button class="shoppingCartbtn" onclick="window.location.href='ShoppingCart.html'"> <img class="top_nav_btn" id="shoppingCartbtn_img" src="../images/shopping_cart.png"  > </button>
+               <button class="phonebtn" onclick="window.location.href='contact_page.html'">  <img class="top_nav_btn" id="phonebtn_img" src="../images/big_phone.png"  > </button>
+               <button class="newMembertn" onclick="window.location.href='registration.html'">  <img class="top_nav_btn" id="newMembertn_img" class="newMembertn_img" src="../images/new_member.png"  > </button>
+
+
+                <div id="emp_in_the_side">
+                    <img id="nav smile empanadas" src="../images/smile_empanadas.png" alt="smile empanadas image" height="50px">
+                </div>
+                <div id="text_in_the_side" dir="ltr">
+                    <p id="text_top_nav"> Carlos & <br> Empanadas </p>
+                </div>
+            </div>
+
+            <div class="sideNavigationBar" id="sideNavigationBar">
+                <br><br>
+                 <a id="X" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9746;</a>
+                 <a href="main_page.html" >  ראשי</a>
+                 <a href="Shop_Page.html">  הזמן אמפנדס</a>
+                 <a href="registration.html">  הרשמה </a>
+                 <a href="Carlos_Story_Page.html">  הסיפור של קרלוס </a>
+                 <a href="cook_with_carlos_page.html">  סדנאות</a>
+                 <a href="question_page.html">  ? מה השאלה</a>
+                 <a href="contact_page.html">צור קשר  </a>
+                 <a href="policy_page.html">מדיניות האתר  </a>
+            </div>
+
+    <div class="container" id="main">
+      <div class="forms-container">
+        <div class="signin-signup">
+
+          <form action="#" class="sign-in-form">
+            <h2 class="title">לקוחות ותיקים</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="שם משתמש" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="סיסמא" />
+            </div>
+            <input type="submit" value="היכנס" class="btn solid" />
+          </form>
+
+          <form action="#" class="sign-up-form">
+            <h2 class="title">הרשמה</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="שם משתמש" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="אימייל" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="סיסמא" />
+            </div>
+            <input type="submit" class="btn" value="הירשם" />
+          </form>
+
+
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>? חדש פה </h3>
+            <p>
+              קרלוס מזמין אתכם להירשם למועדון הלקוחות האקסלוסיבי שלו! הירשמו ותוכלו להנות מהטבות ומבצעים מיוחדים לחברי מועדון בלבד
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              הרשמה
+            </button>
+          </div>
+          <img src="img/chef.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>? לקוח ותיק </h3>
+            <p>
+            יכול להיות שכבר נפגשנו בעבר ? אם אתם רשומים לאתר לחצו כאן
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              כניסה
+            </button>
+          </div>
+          <img src="img/chef.svg" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/registration.js"></script>
+     <div id="footer" class="footer" dir="rtl">
+         <br><br>
+         <a id="mainPage"><span class="footerLable"><p id="mainP" onclick="goToPage('mainPage','main_page.html')"
+                     onmouseover="changePointer('mainP','pointer');" onmouseout="changePointer('mainP','default');">ראשי</p></span></a>
+
+         <a id="contactPage"><span class="footerLable"><p id="contactP" onclick="goToPage('contactPage','contact_page.html')"
+                      onmouseover="changePointer('contactP','pointer');" onmouseout="changePointer('contactP','default');">|צור קשר</p></span></a>
+
+         <a id="policyPage"><span class="footerLable"><p id="PolicyP" onclick="goToPage('policyPage','policy_page.html')"
+                      onmouseover="changePointer('PolicyP','pointer');" onmouseout="changePointer('PolicyP','default');">|מדיניות</p></span></a>
+
+         <a id="shopPage"><span class="footerLable"><p  id="shopP" onclick="goToPage('shopPage','Shop_Page.html')"
+                      onmouseover="changePointer('shopP','pointer');" onmouseout="changePointer('shopP','default');">|הזמנות</p></span></a>
+
+         <a id="questionPage"><span class="footerLable"><p id="questionP" onclick="goToPage('questionPage','question_page.html')"
+                      onmouseover="changePointer('questionP','pointer');" onmouseout="changePointer('questionP','default');">|שאלות נפוצות</p></span></a>
+
+     </div>
+
+  </body>
+</html>

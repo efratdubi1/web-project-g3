@@ -1,0 +1,58 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+    <head>
+        <title>Paying page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/main_page.css">
+        <script type = "text/javascript" src="../js/functions.js"></script>
+    </head>
+
+    <body class="body_paying">
+         <div class="header1">
+            <p class="textHeader1" id="header1" >..נותר רק לשלם והאמפנדס אצלך</p>
+             </div>
+            <div class="main" id="main" class="centered">
+             <h2 id="header" class="subtitle fancy"><span> תשלום מאובטח </span></h2>
+                 <form action="/todo" method="POST">
+                    <div class="FormDetails">
+                        <!--first name-->
+                        <label for=PrivateName>:שם פרטי</label><br>
+                        <input id="privateName" class="payingInput" onblur="checkName('privateName')" type="text" ><br> </br>
+                        <!--last name-->
+                        <label for=surename>:שם משפחה</label><br>
+                        <input id="surename" class="payingInput" onblur="checkName('surename')" type="text" ><br>
+                        <!--id-->
+                        <label for=buyerID>:תעודת זהות</label><br>
+                        <input id="buyerID" class="payingInput" onblur="checkIDBuyer('buyerID')"  type="text"><br><br>
+
+                        <b class="textPaying" for=Payment >:אמצעי תשלום</b><br>
+
+                        <!--payment method - radio-->
+                        <div style = "direction: rtl;">
+                            <input type="radio" id="cash" name="paymentOpt" onclick="chooseCash('dispNone','dispBlock')">
+                            <label for="cash">מזומן</label> <br>
+                            <input type="radio" id="visa" name="paymentOpt" onclick="chooseCash('dispBlock','dispNone')">
+                            <label for="visa">ויזה</label> <br>
+                            <input type="radio" id="mastercard" name="paymentOpt" onclick="chooseCash('dispBlock','dispNone')">
+                            <label for="mastercard">מאסטרקארד</label> <br><br>
+                        </div>
+                        <div id="creditCardInputs">
+                            <!--card number-->
+                            <label id="creditCardNum" for="creditInput">:מספר כרטיס אשראי</label><br>
+                            <input id='creditInput' class="payInput" onblur="checkCreditNum('creditInput')" style="text-align: center;" type="text"><br>
+                            <!--CVV-->
+                            <label for="creditCardCVVInput" title="שלוש ספרות אחרונות בגב הכרטיס">CVV:</label><br>
+                            <input id='creditCardCVVInput' class="payInput" onblur="checkCVV('creditCardCVVInput')"  type="text"><br><br>
+                        </div>
+                    </div>
+                      <hr>
+                    <div><br>
+                        <button class="buttonPay" type="button" onclick="submitPayment()">בצע תשלום</button><br><br>
+                        </br>
+                        <a href="ShoppingCart.html" id="cartButton" class="BackCart">-חזרה לעגלת הקניות-</a><br><br><br>
+                    </div>
+                </form>
+
+            </div>
+    </body>
+</html>

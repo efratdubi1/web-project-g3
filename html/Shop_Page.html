@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shopping Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main_page.css">
+    <script type="text/javascript" src="../js/functions.js "></script>
+</head>
+
+<body class="body_shop_page">
+               <div class="TopNavigationBar" id="TopNav" dir="rtl">
+                <button id="openbtn" class="openbtn" onclick="openNav()"> <img class="top_nav_btn" id="openbtn_img" src="../images/menu.png"  ></button>
+               <button class="empanadasbtn" onclick="window.location.href='Shop_Page.html'"> <img class="top_nav_btn" id="empanadasbtn_img" src="../images/dark_blue_emp.png"  ></button>
+               <button class="shoppingCartbtn" onclick="window.location.href='ShoppingCart.html'"> <img class="top_nav_btn" id="shoppingCartbtn_img" src="../images/shopping_cart.png"  > </button>
+               <button class="phonebtn" onclick="window.location.href='contact_page.html'">  <img class="top_nav_btn" id="phonebtn_img" src="../images/big_phone.png"  > </button>
+               <button class="newMembertn" onclick="window.location.href='registration.html'">  <img class="top_nav_btn" id="newMembertn_img" class="newMembertn_img" src="../images/new_member.png"  > </button>
+
+
+                <div id="emp_in_the_side">
+                    <img id="nav smile empanadas" src="../images/smile_empanadas.png" alt="smile empanadas image" height="50px">
+                </div>
+                <div id="text_in_the_side" dir="ltr">
+                    <p id="text_top_nav"> Carlos & <br> Empanadas </p>
+                </div>
+            </div>
+
+            <div class="sideNavigationBar" id="sideNavigationBar">
+                <br><br>
+                 <a id="X" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9746;</a>
+                 <a href="main_page.html" >  ראשי</a>
+                 <a href="Shop_Page.html">  הזמן אמפנדס</a>
+                 <a href="registration.html">  הרשמה </a>
+                 <a href="Carlos_Story_Page.html">  הסיפור של קרלוס </a>
+                 <a href="cook_with_carlos_page.html">  סדנאות</a>
+                 <a href="question_page.html">  ? מה השאלה</a>
+                 <a href="contact_page.html">צור קשר  </a>
+                 <a href="policy_page.html">מדיניות האתר  </a>
+            </div>
+
+    <p class="main" id="main" class="centered">
+
+    <p class="subtitle fancy"><span> האמפנדס של קרלוס </span></p>
+
+    <div class="row">
+        <div class="column">
+            <img class="ShopPic" src="../images/meat_empanadas.PNG" alt="Meat">
+            <div class="btn-group">
+                <p id="price1" class="empanadas-price price">10</p>
+                <input type="button" value="-" class="button-minus" data-field="quantity">
+                <input type="number" step="1" max="" value="0" name="quantity" id="quantity1"  class="quantity-field">
+                <input type="button" value="+" class="button-plus" data-field="quantity">
+            </div>
+        </div>
+        <div>
+            <div class="column">
+                <img class="ShopPic" src="../images/spinach_empanadas.PNG" alt="Spinach">
+                <div class="btn-group">
+                    <p id="price2" class="empanadas-price price">8</p>
+                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                    <input type="number" step="1" max="" value="0" name="quantity"  min="0" id="quantity2" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                </div>
+            </div>
+            <div class="column">
+                <img class="ShopPic" src="../images/cheese_empanadas.PNG" alt="Cheese">
+                <div class="btn-group">
+                    <p id="price3" class="empanadas-price price">8</p>
+                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                    <input type="number" step="1" max="" value="0" name="quantity" min="0" id="quantity3" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                </div>
+            </div>
+            <div class="column">
+                <img class="ShopPic" src="../images/chocolate_empanadas.PNG" alt="chocolate">
+                <div class="btn-group">
+                    <p id="price4" class="empanadas-price price">9</p>
+                    <input type="button" value="-" class="button-minus" data-field="quantity">
+                    <input type="number" step="1" max="" value="0" name="quantity" min="0"  id="quantity4" class="quantity-field">
+                    <input type="button" value="+" class="button-plus" data-field="quantity">
+                </div>
+            </div>
+            <div class="column">
+                <img class="ShopPic" src="../images/corn_empanadas.PNG" alt="Corn">
+                <div class="btn-group">
+                    <p id="price5" class="empanadas-price price">8</p>
+                    <input typ  e="button" value="-" class="button-minus" data-field="quantity" />
+                    <input type="number" step="1" max="" value="0" name="quantity" min="0"
+                        class="quantity-field" /> <input type="button" value="+" class="button-plus" id="quantity5" data-field="quantity" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="total-price-text" id="totalPriceText">0</p>
+    <input type="hidden" name="totalPrice" id="totalPrice" value="0"/>
+    <button class="payment" onclick="window.location.href='ShoppingCart.html'"> לעגלת הקניות</button>
+    <div class="footer">
+               <a id="mainPage"><span class="footerLable"><p id="mainP" onclick="goToPage('mainPage','main_page.html')"
+                     onmouseover="changePointer('mainP','pointer');" onmouseout="changePointer('mainP','default');">ראשי</p></span></a>
+
+         <a id="contactPage"><span class="footerLable"><p id="contactP" onclick="goToPage('contactPage','contact_page.html')"
+                      onmouseover="changePointer('contactP','pointer');" onmouseout="changePointer('contactP','default');">|צור קשר</p></span></a>
+
+         <a id="policyPage"><span class="footerLable"><p id="PolicyP" onclick="goToPage('policyPage','policy_page.html')"
+                      onmouseover="changePointer('PolicyP','pointer');" onmouseout="changePointer('PolicyP','default');">|מדיניות</p></span></a>
+
+         <a id="shopPage"><span class="footerLable"><p  id="shopP" onclick="goToPage('shopPage','Shop_Page.html')"
+                      onmouseover="changePointer('shopP','pointer');" onmouseout="changePointer('shopP','default');">|הזמנות</p></span></a>
+
+         <a id="questionPage"><span class="footerLable"><p id="questionP" onclick="goToPage('questionPage','question_page.html')"
+                      onmouseover="changePointer('questionP','pointer');" onmouseout="changePointer('questionP','default');">|שאלות נפוצות</p></span></a>
+    </div>
+    </div>
+</body>
+
+</html>
